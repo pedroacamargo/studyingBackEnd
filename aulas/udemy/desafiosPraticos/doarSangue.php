@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-        $idade = 18;
+        $idade = 4;
         $peso = 76;
 
         if ($peso >= 50 && ($idade <= 69 && $idade >= 16)) {
@@ -16,6 +16,9 @@
         } else {
             echo 'Não atende aos requisitos';
         }
+
+        $res = $peso >= 50 && ($idade <= 69 && $idade >= 16) ? "Atende aos requisitos" : "Não atende aos requisitos";
+        echo $res;
     ?>
 </body>
 </html>

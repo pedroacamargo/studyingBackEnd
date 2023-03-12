@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Operador ternário: <condição> ? true : false -->
+
     <?php 
         $usuario_possui_cartao_loja = true;
         $valor_compra = 225;
@@ -22,7 +24,30 @@
 
     <h1>Detalhes do pedido</h1>
 
+    <p>Possui cartão da loja?</p>
+        <?php 
+            if ($usuario_possui_cartao_loja == true) {
+                echo "SIM";
+            } else {
+                echo "NÃO";
+            }
+        ?>
+
+
+    <p>Valor da compra: <?php echo $valor_compra ?></p>
+
+    <p>Recebeu desconto no frete?</p>
+
+    <?php 
+        if ($recebeu_desconto_frete == true) {
+            echo "SIM";
+        } else {
+            echo "NÃO";
+        }
+    ?>
     
+    <p>Valor do frete: <?= "$valor_frete"; ?></p>
+
 
 </body>
 </html>

@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro documento php</title>
-</head> 
+    <title>Document</title>
+</head>
 <body>
-    <?php
-        echo "Utilizando a tag padrão";
+    <?php 
+        if (5 == 3 XOR 4 == 4) {
+            echo 'Verdadeiro';
+        } else {
+            echo 'Falso';
+        }
+
     ?>
-    <br>
-    <?= 'Utilizando a tag impressão' ?>
+    
+
 </body>
 </html>
